@@ -1,0 +1,165 @@
+/* tudo que se coloca entre barras e asterisco e comentario */
+
+/*Os seletores são a declaração que o CSS utiliza para identificar os elementos do HTML.
+  Por meio dos seletores, podemos aplicar a formatação em quase qualquer parte de uma página web. */
+  
+  /*		TIPOS DE SELETORES
+  
+  UNIVERSAL         *           qualquer elemento
+  ELEMENTO         <e>          seleciona qualquer elemento do tipo <e>
+  CLASSE	          .           seleciona os elementos que contem a classe
+  ID                # 	        Seleciona o elemento identificado com o ID.
+  LINK              a 	        Seleciona a pseudo-class link
+  HOVER             :hover 	É aplicada quando posicionamos o mouse sobre o elemento.
+  
+
+
+====================================== UNIDADES DE MEDIDAS ==================================================================
+
+PX == pixel
+% == porcentagem
+CM == centimetro
+MM == milimetro
+EM == equivale a 16px
+PT == ponto
+
+
+=============================================== FORMATAÇAO DA PAGINA HTML ===================================================
+
+  */
+  
+  /* no codigo abaixo mudamos a cor das letas para verde*/
+  .verde{color:green;}
+ 
+  /* abaixo definimos a cor azul*/
+  .azul{color:blue;}
+  
+ /* abaixo definimos a cor e o tamanho das letas */
+ .branco{color:maroon;
+         font-size:20px;}
+ 
+
+  /* body{background-color: blueviolet;}                 nessa linha definimos a cor de fundo do arquivo.html */
+ 
+
+
+
+/* abaixo definimos a imagen de fundo e suas propriedades */
+
+      body {background-image: url(''); /* imagem */
+          background-position: 100px,30px;   /* valores da posiçao da imagem vertical horizontal*/
+      background-position: top;             /* valor da posiçao da imagem ( topo )*/
+      background-repeat: no-repeat;        /* valor de repetiçao da imagem */
+      background-attachment:fixed;        /* Se a imagem ficara fixa ou rolara com a barra de rolagem */ 
+      background-size:2000px, 6000px;}   /* ajuste do tamanho da imagem*/
+
+
+
+      /* Imagem logo da pagina*/
+
+ *{margin: 0; padding: 0;}  
+ 
+ 
+ /* APARTI DAQUI INICIAREMOS NOSSA MARGIN= 0 E PADDING= 0 */
+
+ .conteniner_principal{font-family: 'Verdana'; color: blueviolet;}
+
+
+/* no codigo abaixo definimos uma cor do plano de fundo superior esquerdo*/
+header{width: 100%; height:10cm; background-color:darkcyan; position: relative; top: auto;} /* width == equivale a largura é heigtn == equivale a altura */
+/* no codigo abaixo a imagem da logo onde foi centralizada e tambem trabalhamos o tamanho dela*/
+.logo{position:relative; width:50mm; height:auto; margin-top: 10px;margin-left:1px ; padding-top: 5mm; left:190mm;}
+.logo img{width:150%;} /* nesse codigo trabalhamos o tamanho da imagem*/
+/* na position existem propriedades que que trabalha com coordenada 
+1 - top ( topo )
+2 - left ( esquerdo )
+3 - right ( direito )
+4 - bottom ( inferior )
+
+*/
+
+
+/* no codigo abaixo definimos as propriedade do menu*/ 
+nav{position:absolute ; right:20cm; bottom:0mm;}
+nav ul li{float: left; color: chartreuse; width:auto; margin:0,80em; font-size: 2,0px; font-family:Arial, Helvetica, sans-serif;
+   list-style: none;}
+nav ul li a{text-decoration: none; color: aqua;}
+nav ul li a:hover{color: blueviolet;}
+
+/* formatando as propriedades da imagem principal*/
+#banner{ width: 100%;}
+#banner img{width:100%; margin-bottom: 5%;}
+
+
+/*propriedades do pop ups*/
+
+.modalDialog{
+  position: fixed; /* o valor da position ficara em fixed, para que o pop ups fique por cima da pagina principal*/
+  top: 50px;          /* o topo da magem 0, significa que a borda da margem ficara sem margin ate o padding*/
+  right: 50px;        /* o lado direito tabem segue o mesmo requisito que o topo*/
+  left: 50px;         /* o lado esquerdo tambem sege o mesmo requisito que o topo*/
+  bottom: 50px;       /* a parte inferior tambem sege o mesmo requisito que o topo*/
+  background-color:rgb(63, 210, 30);
+  z-index: 9999; /* a div ( pop up ) ficara por cima de toda a pagina por conta dessa config. e das outras acima. Quanto maior o valor mais pra frente ele ficara*/
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in; /*o css transition permite que as mudanças nos valores das propriedades CSS ocorram suavemente, com uma duraçao determinada.*/
+  -moz-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  pointer-events:none;/*A propriedade pointer-events com o valor none informa ao navegador que os elementos que possuem a class modalDialog não devem ser alvo de eventos realizados pelo mouse. Por exemplo: cliques e hovers.*/
+  display: none;/* a propriedade display permite que você indique ao navegador como os elementos devem ser renderizados pelo motor. */
+  border-radius: 10%;
+}
+.modalDialog:target{
+  display:block; /* estamos informando que a div ficara visivel no navegador*/
+  opacity:1;     /* desse modo o pop up vai aparecer suavemente*/
+  pointer-events:auto;} /*posibilita a interaçao com a div*/
+
+  .modalDialog div{
+    width:0mm; /*define o tamanho da barra branca no botao de fechar do pop ups*/
+    position: relative;
+    margin:1% auto;
+    padding: 2px 2px 13px 20px;/*os quatro valores se referem ao top, rhigt, botton, left*/
+    -webkit-border-radius:1px;
+    border-radius:10px; /* essa propriedade permite que as bosdas fiquem arredondadas*/
+    background-color:#fff;
+    }
+    
+    .modalDialog p {
+    margin-top:5%;
+    margin-bottom:5%;
+    
+    }
+    
+    .modalDialog img{
+    width:50%;
+    position:relative;
+    margin-left:5%;
+    }
+
+  .close {
+    background-color:blue;
+    color:purple;
+    line-height:200%; /*A propriedade line-height  define a altura que cada linha do texto terá. */
+    position:absolute;
+    right:0;
+    text-align:center;/*A propriedade text-align permite alinhar o texto. /* os valores sao left( a esquerda ), center( centro ), right( direita ), justify( justificado ), initial (valores padrao de formataçao do navegador), inherit( herda as propriedades de alinhamento de texto do pai.  */
+    top: -10px;
+    width:24px;
+    text-decoration:none;
+    font-weight:bold;
+    --webkit-border-radius:12px;/*Assim como na formatação da div, também indicamos ao navegador como ele deve renderizar a borda do elemento*/
+    -moz-border-radius:12px;    /*Assim como na formatação da div, também indicamos ao navegador como ele deve renderizar a borda do elemento*/
+    border-radius:12px;         /*Assim como na formatação da div, também indicamos ao navegador como ele deve renderizar a borda do elemento*/
+    }
+    
+    .close:hover{ background-color:fuchsia;}
+
+  /* Definiçao da propriedades do rodape*/
+  footer{width: 100%; height: 18%; background-color: #b50909; color: #fff; position: relative; float: left; font-family: 'verdana';
+width: 100%;
+height: 18%;
+background-color: #b50909;
+color: #fff;
+position: relative;
+float: left;
+font-family:'verdana'  }

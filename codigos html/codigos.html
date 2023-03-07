@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+
+    ================================================ TAG META =====================================================
+A meta tag fornece informaçoes do autor do documento, o bom é que essas informaçoes nao sao mostradas <br>
+no navegador.
+<br>
+As tags meta ou metatags são tags que fornecem dados aos navegadores e aos motores de busca sobre o documento HTML em que estão inseridas. <br>
+Tais tags não aparecem em sua tela, pois são informações específicas para os navegadores.<br>
+
+Você se lembra dos atributos? No caso apresentado, observe que a tag <meta> possui o atributo charset e o valor ‘utf-8’. O atributo charset informa ao navegador o tipo de codificação que deve ser usada.
+
+Com isso, precisamos informar ao navegador o tipo de codificação de caracteres que ele deve usar. O modelo de codificação UTF-8 pode representar qualquer caráter universal padrão Unicode.
+
+
+<meta name="description" content="Descrição da página">
+<meta name="keywords" content="Palavras-chaves">
+<meta name="author" content="nome do Autor"> 
+
+================================================= INICIAR UM PARAGRAFO NEGRITO =========================================
+ <P> <b></b></P>
+ 
+ <hr>=============================================== ALINHAMENTO DE TEXTO ==================================================
+ <!-- alinhamento de texto para a esquerda -->
+ <p align="left"> esse texto estar configurado para ficar <br> na esquerda </p>
+  
+<p align="center"> esse texto estar configurado <br> para ficar no centro </p>
+  
+<p align="right"> esse texto estar configurado para ficar <br> na direita </p>
+
+
+<hr>================================================ LINKANDO UM TEXTO ==================================================== 
+<a href="https://www.mercadolivre.com.br/"> clique aqui para acessar a pagina do mercado livre </a> <br>
+ 
+ 
+ <hr>=============================================== CONFIGURANÇÃO DA FONTE, COR, TAMANHO =================================
+ <font face=""> </font> altera a fonte das palavras
+ <font size=""> </font> altera o tamanho das palavras
+ <font color=""> </font> altera a cor das palavras
+ <p></p> insere uma linha apos o paragrafo
+ <br> isere apenas uma quebra de linha
+ <hr> insere uma linha horizontal na pagina
+ <hx> adiciona titulos na pagina onde o x representa o numero dos titulos
+<hr>=============================================== INSERIR UM COMENTARIO SEM MOSTRAR NO NAVEGADOR =======================
+
+  <!--   --> insere comentario
+
+<hr>============================================ EXIBIR O TEXTO DA FORMA QUE FOI DIGITADO ============================== 
+  <pre> </pre> exibe no navegador o texto exatamento como foi digitado com espaços e linhas
+ 
+
+ ============================================= PARA CRIAR UM LISTA ORDENADA COM NUMEROS ==============================
+ <ol> </ol> abre e fecha o tipo de listas
+ <li> abre cada item da lista 
+ exemplo de uma lista
+ 	 <ol>
+ 	 	<li> primeiro item
+ 	 	<li> segundo item
+ 	 </ol>
+ ============================================= PARA CRIAR UMA LISTA NÃO ORDENADA =====================================
+ <UL> 
+ 	<LI> ITENS DA LISTA
+ 	<LI> ITENS DA LISTA
+ </UL>
+ 
+ ============================================ EXEMPLO DE UMA LISTA INTERCALADA =======================================
+ <OL>
+ <LI> PRIMEIRO ITEM
+ 	<UL>
+ 		<LI> ITENS DO PRIMEIRO ITEM
+ 		<LI> ITENS DO PRIMEIRO ITEM 
+ 	</UL> 
+ </OL>
+ 
+ =========================================== COMO EXPECIFICA O TIPO DE MARCADOR DA LISTA =============================
+ 
+ <OL TYPE ="ESPECIFICA O TIPO DE MARCADOR">
+ 	<LI> "DISC" EXIBE O MARCADOR DE BOLINHA PRETA
+ 	<LI> "CIRCLE" EXIBE O MARCADOR DE BOLINHA BRANCA
+ 	<LI> "SQUARE" EXIBE O MARCADOR QUADRADO
+ </OL>
+ 
+ PARA EXIBIR LETRAS MAIUSCULAS TYPE="A"
+ PARA EXIBIR LETRAS MINUSCULAS TYPE="a"
+ PARA EXIBIR NUMEROS ROMANOS TYPE="I"
+ PARA EXIBIR NUMEROS ROMANOS PEQUENOS TYPE="i"
+
+============================================= COMO CARREGAR UM IMAGEM PARA PAGINA WEB ===============================
+
+	<IMG SRC="CAMINHO DO ARQUIVO">
+	
+OBS: PARA DEIXAR A IMAGEM EM ALGUMA POSIÇÃO NA PAGINA USAMOS A TAG ALIGN="" 
+
+<IMG SRC ="CAMINHO DA IMAGEM" ALIGN="TOP"> DEIXA A IMAGEM NO TOPO DO TEXTO
+<IMG SRC ="CAMINHO DA IMAGEM" ALIGN="BOTTOM"> DEIXA A IMAGEM ABAIXO DO TEXTO
+<IMG SRC ="CAMINHO DA IMAGEM" ALIGN="MIDDLE"> DEIXA A IMAGEM NO MEIO DO TEXTO
+<IMG SRC ="CAMINHO DA IMAGEM" ALIGN="RIGHT"> DEIXA A IMAGEM A DIREITA DO TEXTO
+<IMG SRC ="CAMINHO DA IMAGEM" ALIGN="LEFT"> DEIXA A IMAGEM A ESQUERDA DO TEXTO
+
+
+=========================================== VINCULAR UMA INFORMAÇÃO NA IMAGEM QUANDO O MOUSE PASSAR POR CIMA DELA ==
+
+<IMG ALT="TEXTO EXPLICATIVO DA IMAGEM">
+
+=========================================== COMO CRIAR UM LINK PARA ACESSAR UMA PAGINA NA WEB =======================
+
+<A HREF=""> texto linkado </A>
+
+=========================================== CRIANDO UM LINK QUE DIRECIONA PARA UMA PARTE DO SITE ====================
+
+     <A href = "#nome do capitulo">TEXTO</A>
+     <A name = "Capítulo I"> DIRECIONAMENTO DA PAGINA ONDE FICA O CONTEUDO DO LINK
+
+=========================================== COMO CRIAR LINKS EM UMA IMAGEM ==========================================
+
+<A HREF=""> <IMG src ="/home/invisible_ghost/Downloads/imagen.png"> </A>
+
+obs: tambem podemos especificar as cores dos links usando a tag BODY
+
+<BODY LINK="COR"> ESPECIFICA A COR DOS LINKS NAO ACESSADOS DA PAGINA
+<BODY VLINK="COR"> APOS SER ACESSADO, O LINK APRESENTARA A COR ESPECIFICADA POR ESTE ATRIBUTO
+<BODY ALINK="COR"> ESPECIFICA A COR QUE O LINK DEVERA APRESENTAR QUALDO O MOUSE ESTIVER SOBRE ELE
+
+
+=========================================== COMO CRIAR UMA IMAGEM MAPEADA ===========================================
+
+DEFINIÇÃO : Uma imagem mapeada é uma imagem dividida em diferentes areas, e cada area é interligada 
+a um documento. Uma imagem pode ter dois links ou mais.
+
+<img src="imagem" alt="" usermap="nome do mapa"> usermap: é um atributo que sera utilizado um mapa na imagem e o nome do mapa utilizado.
+
+EXP:
+
+<img src="imagem" usemap="#menu" border="0">
+<map name="menu">
+	<area shape="rect" coords="11,13,115,52" href="URL" alt="Item">
+
+<map name="menu">
+        <area shape="rect" coords="11,13,115,52" href="URL" alt="Item">
+
+NO CODIGO ACIMA UMA IMAGEM FOI MAPEADA COM DOIS LINKS, DIRECIONANDO CADA PARTE DA IMAGEM PARA UM LINK DIFERENTE.
+
+ONDE: AREA >> DELIMITA A AREA DA IMAGEM QUE VAI CONTER UM LINK
+ONDE: SHAPE É UM ATRIBUTO DE VALORES que especifica a area da imagem que recebera o link;
+SHAPE="RECT" = PARA RETANGULOS
+SHAPE="CIRCLE" = PARA CIRCULO
+SHAPE="POLYGON" = PARA PLIGONOS
+
+ONDE: COORDS="" >> INDICA AS COORDENADAS 
+
+ONDE: HREF="" >> INDICA A PAGINA DE DESTINO<br> <br>
+
+<!-- veja um exemplo de uma imagem mapeada -->
+<img src="/home/invisible_ghost/Downloads/imagen.png" usemap="#mapa" BORDER="1">
+<map name ="mapa">
+<area shap="rect" coords="1,0,100,500" href="http://www.mercadolivre.com">
+<map name ="mapa">
+<area shap="rect" coords=",2,200,1000" href="http://www.americanas.com">
+
+
+=============================================== COMO CRIAR TABELAS ===================================================
+<BR>
+<BR>
+<BR>
+<HR>
+<!-- <TABLE> </TABLE> == CRIA TABELAS 
+<TD> </TD> RESPONSAVEL POR CRIAR AS COLUNAS
+<TR> == RESPONSAVEL POR CRIAR AS LINHAS 
+-->
+EX:
+<TABLE BORDER="2" 
+BORDERCOLOR="#ff0000"
+BGCOLOR="BLUE">                        <!-- ADICIONAMOS NA TABELA UMA BORDA DE COR VERMELHA COM A TAG BORDERCOLOR E UM FUNDO COLORIDO COM A TAG BGCOLOR -->
+
+<TR>
+	<TD>NOME</TD>
+	<TD>IDADE</TD>
+<TD BGCOLOR="CCFFFF">CIDADE</TD>       <!-- usamos a tag td bgcolor para colorir uma celula da tabela, pode ser usado tambem a tag <tr bgcolor=""> para colorir uma linha -->
+	
+<TR>
+	<TD>aline</TD>
+	<TD>33</TD>
+	<TD>montes altos</TD> 
+	
+</TABLE>
+
+<!-- ----------------------------------- tambem podemos acrecentar uma imagem de fundo na tabela com a tag BACKGROUND="imagem"---------------------------------- -->
+
+EX:
+ <!-- <TABLE BACKGROUND="IMAGEM">  </TABLE>-->
+
+<HTML >
+	<HEAD>
+		<TITLE>Definindo dimensão da tabela</TITLE>
+	</HEAD>
+<!-- ---------------------------------- usando a tag WIDTH é tag HEIGHT podemos formatar a altura e a largura da tabela é tambem as celulas da tabela -->
+<BODY>
+	<TABLE WIDTH="300" align="right" HEIGHT="20%" BORDER="2" CELLSPACING="10"> <!-- a tag CELLSPACING="valor" especifica o espaçamento entre as bordas da tabela-->
+		<TR BGCOLOR= #E0EEEE>
+			<TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+			<TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+		<TR>
+			<TD><FONT FACE= "Calibri">Anna</FONT></TD>
+			<TD><FONT FACE= "Calibri">Santos</FONT></TD>
+		<TR BGCOLOR = #E0EEEE>
+			<TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+			<TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+	</TABLE>
+	
+<!-- com a tag ALING podemos alinha a tabela -->
+ex:
+<table align="valor"> </table>
+
+no valor temos:  left           center               right
+                ESQUERDA         CENTRO              DIREITA
+
+<!-- dentro da tag <TD> podemos mudar alguns atributos da celulas
+como:    <td align="valor"> alinha de forma horizontal a tabela na pagina web. seus valores podem ser LEFT (ESQUERDA), CENTER (CENTRO) RIGHT (DIREITA)  -->
+
+<!-- dentro da tag <TD> tambem podemos alinhas os dados de uma celula na vertical usando a tag VALIGN. 
+como: <td valign="valor"> seus valores sao TOP (TOPO), CENTER(CENTRO), BOTTON (INFERIOR)-->
+
+<!-- dentro da tag <TD> podemos mesclar uma celula usando o atributo COLSPAN, o valor para este atributo tem de ser especificado em numeros.
+como: <td colspan="valor">-->
+
+<!-- dentro da tag <TD> podemos usar o atributo ROWSPAN. esse atributo mescla celulas dentro de uma tabela, o valor deve ser em numero.
+como: <td rowspan="valor"> -->
+
+</BODY>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</HTML >
+=============================================== COMO CRIAR FORMULARIOS E CONFIGURA-LOS ======================================
+
+<!-- Para criar um formulario usamos a tag <FORM ATRIBUTOS> </FORM> e seus atributos. -->
+
+<!-- como atributo temos o ACTION="". Que informa para onde os dados seram enviados, seja para um endereço de email ou programa especificado dentro das aspas-->
+
+<!-- como atributo temos o METHOD="". Que informa a maneira de envio de dados para o servidor web. Como valor temos o POST-> onde o navegador enviara os fluxos de dados diretamente para um padrao usado por servidores web chamado SCRIPT-CGI. O outro method se chama GET-> onde as informaçoes seram anexadas na URL especificada em ACTION e enviadas para o servidor como uma unica URL. -->
+
+<!-- OBS: O methot POST é mais utilizado, pois envia uma quantidade maior de dados para o servidor-->
+
+<!-- No atributo TYPE especifica o tipo de controle ou do campo que sera criado -->
+
+<!-- Dentro do atributo TYPE podemos especificar alguns valores como 
+text-> que exibe um texto legivel.
+password-> que exibe um campo de senha. 
+radio-> que exibe uma opção a ser selecionada pelo usuario.
+checked-> cria uma caixa de opção ja selecionada como padrao.
+checkbox-> adiciona um conjunto de botoes de multiplas escolhas.
+button-> cria um botao de envio, onde envia as informações inseridas pelo usuario para o banco de dados.
+image->
+file->
+reset-> cria um botão que limpa as informações inseridas no formulario.
+submit->
+hidden-> adiciona um campo oculto no formulario para envio de uma palavra-chave ex: remenber_token, cpf. 
+value-> especifica o valor inicial do controle.
+-->
+
+<form action="url" method="POST">
+NOME:<INPUT TYPE="TEXT"   NAME="NOME"    SIZE="25"       MAXLENGHT="50" PLACEHOLDER="INSIRA SEU NOME">                <br>
+<!--          II           II            II              II              II                       -->
+<!--     TIPO_CAMPO    Nome_variavel   TAM._CAMPO   NUM.MAX_CARACT.      ESCREV.DENT._CAMPO   -->                     
+
+<FONT COLOR="BLUE">SENHA:</FONT><INPUT TYPE="PASSWORD"name="senha" SIZE="25" PLACEHOLDER="INFORME SUA SENHA">         <br>         <!-- Nesse campo adicionei o campo de senha-->
+
+CIDADE: <INPUT TYPE="TEXT" name="cidade"SIZE="20" PLACEHOLDER="INFORME A CIDADE">                                     <br>         <!-- Nesse campo adicionei o campo cidade -->
+
+<hr>
+
+
+
+                                     <!-- Nesse codigo abaico eu criei um codigo que pede ao usuario escolher um tipo de dado, ou seja criei uma lista. -->
+
+<P>Selecione a opção do cartão: <br>
+
+<input type="radio" name="selecionar_cartao" CHECKED> visa <br>
+<input type="radio" name="selecionar_cartao"> elo <br>
+<input type="radio" name="selecionar_cartao"> mastercard<br>                                                          <hr>
+</form>
+</P>
+
+<hr>
+<p>
+
+
+                                     <!-- No codigo abaixo eu criei um formulario que escolhe os horarios pelo usuario -->
+
+<b>Informe o horario:</b><br>
+<input type="checkbox", name="hora">13:00<br>
+<input type="checkbox", name="hora">14:00<br>
+<input type="checkbox", name="hora">15:00<br>
+
+
+
+
+
+                    <!-- No codigo abaixo eu criei um campo que insere um comentario pelo usuario juntamente com um botao de ENVIAR e outro de LIMPAr-->
+
+<P>Comentario: <TEXTAREA NAME="coment" ROWS="2"              COLS="40">        </TEXTAREA></P>                                  <!-- nesse codigo eu inserir uma campo para comentarios -->
+<!--                                     II                      II                     -->
+<!--                           NUM.LINHAS(ALTURA)        NUM.COLUNAS(LARGURA)           -->
+
+<input type="button" value="enviar">
+
+<input type="reset" value="limpar">
+
+<INPUT TYPE=hidden NAME="cpf" VALUE="verdadeiro"> <!-- criei um campo para passagem de uma palavra-chave --> 
+</p>
+<HR>
+<!-- ----------------------------------------------------------------------------COMO CRIAR UMA LISTA COM VALORES --------------------------------------------------------------------------- -->
+
+<!-- Atravez da tag <form><select> 
+                           <option>valor
+                           <option>valor
+                           <option>valor
+                    </form></select>  é que podemos criar uma lista com varia opçoes. Com o atributo SIZE, definimos sua altura de opçoes  -->
+
+<b><font color="red">Selecione o pais de origem</font></b>
+<form><select name="pais" size="">
+	<option>Brasil
+	<option>China                                            <!-- nessa lista eu nao utilizei o atriburo size -->
+	<option>Japao
+	<option>EUA
+       </select>
+</form>
+
+
+<br>
+<br>
+<br>
+<hr>
+                                                                  <!-- COMO CRIAR OS FRAMES-->
+                                                                  
+<!--Frames ou molduras são utilizados para dividir a janela do navegador em diferentes partes e, cada uma delas,
+pode ser atualizada separadamente, pois carrega um documento HTML diferente
+Frame são como moldes onde as páginas web são obrigadas a se encaixar.
+Exirtem dois tipos de atributos de frameset, FRAMESET COLS="",(coluna), e FRAMESET ROWS="", (LINHA)--> 
+
+<!--ATRIBUTOS DO FRAME
+src: especifica a URL que vc deseja carregar um frame
+marginwidth: especifica as magens direita e esquerda(largura) do conteudo de uma frame. seu valor e expecificado em pixel.
+marginheigth: especificar as margens superior e inferior do conteudo de uma frame, e seu valor é especificado em pixel.
+scrolling: adiciona uma barra de rolagem em um frame.
+noresize: impede que um usuario redimecione um frame.
+
+=============================================================== ATRIBUTO TARGET ========================================================================================
+O atributo target especifica para qual frame o link sera direcionado, seus valores sao:
+target="_blank" >> abre um link em uma nova janela
+target="_self" >> abre ujm link no mesmo frame.
+target="_parent" >> carrega o frame na pagina principal.
+target="_top" >> carrega a pagina no fame mais alto.
+-->
+
+</frameset>                                                             
+
+
+=========================================================== COMO MUDAR A COR DO FUNDO DA PAGINA =========================================================================
+ <!---    <body bgcolor = “nome_cor”>  </body>    -->
+
+</body>
+</html>

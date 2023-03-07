@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="arquivo.css"> <!-- vinculaçao do arquivo css-->
+</head>
+<body>
+
+    <!-- a tag DIV representa blocos de codigos -->
+
+    <div class="conteniner_principal">
+        <header>
+            <div class="logo">
+                <a href="codigos mais css.html">
+                    <img src="imagens/imagen.png"> <!--imagem linkada no canto da pagina-->
+                        
+                </a>
+<!-- A tag NAV tem como objetivo concentrar os links que formam a navegaçao da pagina-->
+                <nav>
+                    <ul>
+                        <li><a href="codigos mais css.html">inicio</a></li>
+                        <li><a a href="produtos">produto</a></li>
+                        <li><a href="cadastro">cadastro</a></li>
+                    </ul>
+                </nav>           
+            </div>
+        </header>
+
+        <section id="banner">
+            <img src="imagens/imagem.jpg">
+        </section>
+    </div>
+    
+    	
+	<!--================================ abaixo definir a cor do fundo da pagina ==============================================================================-->
+    
+    <!--NO CODIGO ABAIXO EU CONSIGO MUDAR A COR DO FUNDO NA PAGINA-->
+    <!---        <style>
+            body{background:blue;}
+            </style>
+    -->   
+    
+    
+    <body>
+    
+<h1 align="center"> <font color="blue">CSS NA PRATICA</font></h1>
+    
+    <BR>
+                                                                                  
+       <!--======================================================== USANDO O CSS DENTRO DA PAGINA HTML ==================================-->  
+                                                                 
+ <p style="color: blue; font-size: 30px;"><b> CSS INLINE </b></p> <BR>
+
+
+                   <p class="azul" ><b> <font size="4">O CSS inline é adicionado junto ao código HTML por meio do atributo style.<br>
+                    Isso permite atribuir novas propriedades e alterar o visual do elemento.<br>
+                    TEXTO LINKADO COM O CSS.</font></b><br></p>
+                                                              
+    <!-- OBS: >> O CSS inline é adicionado junto ao código HTML por meio do atributo style. Isso permite atribuir novas propriedades e alterar o visual do elemento.
+                 Veja no codigo abaixo como mudar a cor da pagina.-->
+
+    <!--NO CODIGO ABAIXO EU CONSIGO MUDAR A COR DO FUNDO NA PAGINA-->
+    <!---        <style>
+            body{background:blue;}
+            </style>
+    -->   
+ <BR>
+    
+    <!--===================================================================== APLICAÇAO DO CSS NA PAGINA DO HTML linkado ===================================-->
+    
+ <p style="color:green; font-size: 30px " ><b> CSS LINKADO </b></p> <BR>    
+    
+    <p class='verde'><b><font size="4">O css linkado utiliza um outro arquivo que configura toda a pagina do html atraves de suas configuraçoes.<br>
+        Para isso precisamos criar um outro arquivo<b>.css</b> e depois digitar os seguintes comandos abaixo.</font></b><br>
+    </p>
+    <p> Dentro da tag <b> head </b> digite o codigo <!-- <link rel="stylesheet" type="text/css" href="estilo.css"> --> ( olhe no arquivo ). E dentro do arquivo css informe as configuraçoes.
+    </p>
+    
+    <br>
+    <hr>
+    
+    <h2 class="azul">Existem alguns valores que podemos atribuir dentro das configuraçoes do css</h2>
+    <ol class="branco"><b>
+    <li> background-color: ; Define a cor do fundo de um elemento.
+    <li> background-image: ; Insere uma imagem de fundo na pagina.
+    <li> background-size: ; Configura o tamanho da imagem no elemento.
+        <ul>
+            <li>top: a imagem fica no topo da pagina</li>
+            <li>left: a imagem </li>
+        </ul>
+    <li> backgroud-position:valor1, valor2; Define a posiçao da imagem em relação a caixa.
+        <ul>
+            <li>a posiçao nos valores sao vertical e horizontal</li>
+        </ul>
+    <li> backgroud-attachment: Define se a imagem de fundo rolará com a tela.
+    <li> backgraoun-repeat: Define se a imagem de fundo pode se repetir ou não.
+    </b></ol>
+<br>
+    <hr>
+<br>
+    <div id=”openmodal” class="modalDialog">
+       <div> <a href="#close" class="close"> X </a></div>
+            <h1>POP UPS</h1>
+            <P>O pop up é uma pagina sobescrita da pagina principal, ela pode ser utilizado <br>
+               como um link de direcionamento para outras paginas.<br>
+               O pop-up é um tipo de janela que se abre no navegador ao visitar uma página web ou acessar uma hiperligação específica.<br>
+               O pop-up é utilizado por autores de sites para abrir alguma informação extra ou como meio de propaganda. </P>
+    </div>
+    <!-- rodape da pagina-->
+    <footer>
+        <div class="footer-text">
+            <h3>Tudo sobre Pop Ups</h3>
+            <p>Saiba como é e como funciona os pops ups.<a href="openmodal">clique aqui</a></p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
