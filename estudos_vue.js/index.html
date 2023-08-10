@@ -7,11 +7,19 @@
 </head>
 <body>
 
+                                <!-- MOSTRANDO AS INFORMAÇOES ATAVES DE UMA ARQUIVO VUE.JS-->
     <div id="app">
+        <h1> ESTUDOS VUE.JS</h1>
         <p>{{ name }} {{ lastName }}</p>
+
+                                <!-- MOSTRANDO A IMAGEM PELO BIND DO VUE.JS -->
+        <img v-bind:src="product.image" v-bind:alt="product.title" style="max-width: 100px;">
     </div>
 
+                                <!-- IMPORTANDO A URL DO VUE.JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+                                <!-- ADICIONANDO O ARQUIVO .JS -->
     <script src="./teste.js"></script>
 
 </body>
