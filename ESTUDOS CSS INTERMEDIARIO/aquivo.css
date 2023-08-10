@@ -1,0 +1,69 @@
+/* tudo que se coloca entre barras e asterisco e comentario */
+
+/*Os seletores são a declaração que o CSS utiliza para identificar os elementos do HTML.
+  Por meio dos seletores, podemos aplicar a formatação em quase qualquer parte de uma página web. */
+  
+  /*		TIPOS DE SELETORES
+  
+  UNIVERSAL         *           qualquer elemento
+  ELEMENTO         <e>          seleciona qualquer elemento do tipo <e>
+  CLASSE	          .           seleciona os elementos que contem a classe
+  ID                # 	        Seleciona o elemento identificado com o ID.
+  LINK              a 	        Seleciona a pseudo-class link
+  HOVER             :hover 	É aplicada quando posicionamos o mouse sobre o elemento.
+  
+
+*/
+
+
+
+/*====================================================== PROPRIEDADES DO TITULO CSS ============================================================================*/
+#TITULO
+{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*DEFINE A FONTE DO TITULO CSS*/
+     color: blueviolet; /* DEFINE A COR DO TITULO CSS*/
+     text-align: center;/* DEFINE A POSIÇAO DO TITULO CSS*/
+}
+/*adicionando uma estilizaçao na palavra style*/
+#style{
+     color: aqua;
+}
+
+/*========================================== abaixo definimos as propriedades do tema principal, cor é localizaçao do titulo=====================================*/
+.titulo
+{
+     color:rgb(10, 205, 140);
+     text-align: center;
+     margin-top: 5%;
+     
+}
+/*========================================================== abaixo temos as config da imagem do topo =========================================================*/
+
+.imagen
+{
+     text-align: center; /* centralizar a imagem */
+     
+}
+
+/*========================================================== abaixo definimos as propriedades dos links ======================================================*/
+
+/* atribui uma cor para links nao visitados*/
+.link1
+{
+     color: brown;
+}
+
+/* atribui uma cor para links visitados*/
+.link2:visited{ color:chartreuse;}
+
+
+/* atribui uma cor no link ao passar com o mouse por cima*/
+.link3:hover{color: crimson;}
+
+/*========================================================== definindo as propriedades do texto ================================================================*/
+
+.texto
+{
+     margin-left: 2%;
+     margin-right: 2%;
+}

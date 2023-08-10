@@ -50,7 +50,7 @@ PT == ponto
           background-position: 100px,30px;   /* valores da posiçao da imagem vertical horizontal*/
       background-position: top;             /* valor da posiçao da imagem ( topo )*/
       background-repeat: no-repeat;        /* valor de repetiçao da imagem */
-      background-attachment:fixed;        /* Se a imagem ficara fixa ou rolara com a barra de rolagem */ 
+      background-attachment:fixed;        /* Se a imagem ficara fixa ou rolara com a barra de rolagem, SE o valor for scroll a imagem ira rolar com a pagina*/ 
       background-size:2000px, 6000px;}   /* ajuste do tamanho da imagem*/
 
 
