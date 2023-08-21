@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESTUDOS VUE.JS</title>
+    <title>estudos vue.js 3</title>
 </head>
 <body>
-
-                                <!-- MOSTRANDO AS INFORMAÇOES ATAVES DE UMA ARQUIVO VUE.JS-->
     <div id="app">
-        <h1> ESTUDOS VUE.JS</h1>
-        <p>{{ name }} {{ lastName }}</p>
+            <h1 align="center"> CURSO VUE.JS 3 </h1> <hr>
+            <p>{{ name }} {{ lastName }}</p> <!-- INSERINDO O NOME DO AUTOR --> <br>
+            <h3>carrinho ({{carro.length}})</h3>
+            <ul>
+                <li v-for="product in products">
+                    
+                 
+                 {{ product.title}}
+                 <img :src="product.image" :alt="product.title" style="max-width: 200px;"> 
+                 <a href="#" v-on:click.prevent="addCarro(product)"> adicionar ao carrinho</a>
+                 
+                </li>
+            </ul>
 
-                                <!-- MOSTRANDO A IMAGEM PELO BIND DO VUE.JS -->
-        <img v-bind:src="product.image" v-bind:alt="product.title" style="max-width: 100px;">
+
+
     </div>
 
-                                <!-- IMPORTANDO A URL DO VUE.JS -->
+    <!-- ADICIONANDO O VUE.JS + O ARQUIVO JAVASCRIPT NA PAGINA DO HTML5 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-                                <!-- ADICIONANDO O ARQUIVO .JS -->
     <script src="./teste.js"></script>
-
 </body>
 </html>

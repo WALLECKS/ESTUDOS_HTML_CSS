@@ -1,19 +1,34 @@
-const app =
-{
+const app = {
     data() {
         return {
-            name: 'wallecks',
-            lastName: 'alencar',
-            product:
-            {
-                title:  'eu sou a lenda',
-                description: 'um grande virus atacou a cidade de nova york...',
-                image: './images/eusoualenda.jpg'
-            }      
+            name: 'WALLECKS',
+            lastName: ' ALENCAR ',
+         
+            
+            products:[
+                {
+                    title: ' eu sou a lenda',
+                    description: 'ultimo sobrevivente de um virus mortal',
+                    image: './images/eusoualenda.jpg',
+                },
+                {
+                    title: 'elysium',
+                    description: 'uma vida fora da terra',
+                    image: './images/elysium.jpeg',
+                },
+
+            ],
+
+            carro: [], 
+                
+            
         }
-    }
-
+    },
+    methods: {
+        addCarro(products){
+            return this.carro.push(products) != -1
+        }
+    },
 }
-
 Vue.createApp(app).mount('#app')
  
